@@ -10,6 +10,7 @@ import java.util.List;
 @Service
 public class UniversiteServiceImplement implements IUniversiteService {
 
+    @Autowired
     private UniversiteRepository universiteRepository;
 
     @Override

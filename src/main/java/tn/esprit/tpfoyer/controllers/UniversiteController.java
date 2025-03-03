@@ -14,14 +14,14 @@ public class UniversiteController {
     IUniversiteService universiteService;
 
     @PostMapping("/addUniversite")
-    Universite addUniversite(@RequestBody Universite reservation){
+    Universite addUniversite(@RequestBody Universite universite){
 
-        return universiteService.addUniversite(reservation);
+        return universiteService.addUniversite(universite);
     }
     @PutMapping("/updateUniversite")
-    Universite updateUniversite(@RequestBody Universite reservation){
+    Universite updateUniversite(@RequestBody Universite universite){
 
-        return universiteService.updateUniversite(reservation);
+        return universiteService.updateUniversite(universite);
     }
     @DeleteMapping("/deleteUniversite/{idUniversite}")
     void deleteUniversite(@PathVariable long idUniversite){

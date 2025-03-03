@@ -23,7 +23,7 @@ public class ReservationController {
 
         return reservationService.updateReservation(reservation);
     }
-    @DeleteMapping("/deleteReservation/{idReservation}")
+   @DeleteMapping("/deleteReservation/{idReservation}")
     void deleteReservation(@PathVariable String idReservation){
 
         reservationService.deleteReservation(idReservation);
@@ -32,7 +32,7 @@ public class ReservationController {
     List<Reservation> getAll(){
         return reservationService.getAll();
     }
-    @GetMapping("/getReservation/{idReservation}")
+   @GetMapping("/getReservation/{idReservation}")
     Reservation getReservation(@PathVariable String idReservation) {
         return reservationService.getReservation(idReservation);
     }
